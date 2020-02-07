@@ -9,7 +9,7 @@ import java.util.Arrays;
 @Aspect
 public class LoggingAspect {
 
-    @Around("execution(* app.*.*(..))")
+    @Around("execution(* app.HelloWorldImpl.*(..))")
     public Object logAround(ProceedingJoinPoint joinPoint) throws Throwable {
 
         System.out.println("logAround() is running!");
